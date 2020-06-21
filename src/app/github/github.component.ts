@@ -7,6 +7,7 @@ import { GithubService } from "../github.service";
   styleUrls: ['./github.component.css'],
   providers: [GithubService]
 })
+
 export class GithubComponent implements OnInit {
 
   user:any;
