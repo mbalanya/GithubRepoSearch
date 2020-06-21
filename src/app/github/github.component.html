@@ -5,10 +5,10 @@
     </div>
     <div class="card-body">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-2">
           <img class='img-thumbnail github-avatar' src="{{ user.avatar_url }}" alt="">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6">
           <div class="stats">
             <span class="badge badge-pill badge-default">{{ user.public_repos }} Public Repos</span>
             <span class="badge badge-pill badge-primary">{{ user.public_gists }} Public Gists</span>
@@ -22,6 +22,20 @@
             <li class="list-group-item"><strong>Email: </strong>{{ user.email }}</li>
             <li class="list-group-item"><strong>Blog: </strong>{{ user.blog }}</li>
             <li class="list-group-item"><strong>Member Since: </strong>{{ user.created_at }}</li>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div *ngFor='let repo of repos'>
+            <div class="row">
+              <div class="col-md-9">
+                <a href="{{ repo.html_url }}">{{ repo.name }}</a>
+                <p>{{ repo.description }}</p>
+              </div>
+              <div class="col-md-3">
+                <span class="badge badge-pill badge-default">{{ repo.watchers }} Watchers</span>
+                <span class="badge badge-pill badge-primary">{{ repo.forks }} Forks</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
