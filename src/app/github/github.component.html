@@ -9,7 +9,12 @@
           <img class='img-thumbnail github-avatar' src="{{ user.avatar_url }}" alt="">
         </div>
         <div class="col-md-8">
-
+          <div class="stats">
+            <span class="badge badge-pill badge-default">{{ user.public_repos }} Public Repos</span>
+            <span class="badge badge-pill badge-primary">{{ user.public_gists }} Public Gists</span>
+            <span class="badge badge-pill badge-success">{{ user.followers }} Followers</span>
+            <span class="badge badge-pill badge-info">{{ user.following }} Following</span>
+          </div>
         </div>
       </div>
     </div>
