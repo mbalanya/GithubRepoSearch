@@ -12,10 +12,9 @@ export class HomepageComponent implements OnInit {
   repos:any;
 
   constructor(private _githubService:GithubService) {
-    console.log('github component init2...');
+
 
      this._githubService.getUser().subscribe(user => {
-       //console.log(user);
        this.user = user;
      });
 

@@ -16,14 +16,13 @@ export class GithubComponent implements OnInit {
   username:string;
 
   constructor(private _githubService:GithubService) {
-    console.log('github component init...');
+    
    }
 
    search(){
      this._githubService.updateUser(this.username)
 
      this._githubService.getUser().subscribe(user => {
-       //console.log(user);
        this.user = user;
      });
 
