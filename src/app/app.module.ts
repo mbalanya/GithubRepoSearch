@@ -10,6 +10,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ColorDirective } from './color.directive';
+import { AgePipe } from './age.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ColorDirective } from './color.directive';
     HomepageComponent,
     NavbarComponent,
     NotFoundComponent,
-    ColorDirective
+    ColorDirective,
+    AgePipe
   ],
   imports: [
     BrowserModule,
