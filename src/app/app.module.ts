@@ -9,6 +9,7 @@ import { GithubComponent } from './github/github.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ColorDirective } from './color.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     GithubComponent,
     HomepageComponent,
     NavbarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ColorDirective
   ],
   imports: [
     BrowserModule,
