@@ -10,8 +10,9 @@ import { map } from 'rxjs/operators';
 export class GithubService {
 
   private username = 'mbalanya';
-  private client_id = 'a816b02129d1ad62c2bb';
-  private client_secret = '3a665e0224f6bab79c5107d6e49236e155c478fb';
+  private client_id = '8459a4d7eac2582d7288';
+  private client_secret = '87c39eaab1fcbf7c088bfcd413269992b4d2f405';
+  //private token = 'f49c99537cecdb78c9e80b08e2ceacee0197c62e';
 
   constructor(private _http:HttpClient) {
     console.log('Github Service init....!');
@@ -30,4 +31,7 @@ export class GithubService {
       .pipe(map(res => res ));
   }
 
+  updateUser(username:string){
+    this.username = username;
+  }
 }
