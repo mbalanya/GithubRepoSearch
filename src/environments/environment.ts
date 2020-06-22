@@ -4,6 +4,9 @@
 
 export const environment = {
   production: false
+
+//  apiClientId = '8459a4d7eac2582d7288',
+//  apiClientSecret = '87c39eaab1fcbf7c088bfcd413269992b4d2f405',
 };
 
 /*

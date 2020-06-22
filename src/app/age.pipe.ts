@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class AgePipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
+  transform(value: number, ...args: unknown[]): unknown {
     console.log(value);
     let currentYear = new Date().getFullYear();
     let currentMonth = new Date().getMonth();
