@@ -11,8 +11,8 @@ import { map } from 'rxjs/operators';
 export class GithubService {
 
   private username = 'mbalanya';
-  private client_id = '8459a4d7eac2582d7288';
-  private client_secret = '87c39eaab1fcbf7c088bfcd413269992b4d2f405';
+  private client_id = '';
+  private client_secret = '';
 
   constructor(private _http:HttpClient) {
 
